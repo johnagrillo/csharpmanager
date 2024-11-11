@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6DD26007-4129-4E6F-9E4F-D49030CD497A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>csharpmanager</RootNamespace>
+    <AssemblyName>csharpmanager</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MmAgegroup.cs" />
+    <Compile Include="MmAltscoring.cs" />
+    <Compile Include="MmAthlete.cs" />
+    <Compile Include="MmCcrank.cs" />
+    <Compile Include="MmCctime.cs" />
+    <Compile Include="MmChecklist.cs" />
+    <Compile Include="MmCombinedevent.cs" />
+    <Compile Include="MmDivisions.cs" />
+    <Compile Include="MmDualteams.cs" />
+    <Compile Include="MmEntry.cs" />
+    <Compile Include="MmEvent.cs" />
+    <Compile Include="MmEventgettimes.cs" />
+    <Compile Include="MmMasters.cs" />
+    <Compile Include="MmMeet.cs" />
+    <Compile Include="MmMeetmobile2options.cs" />
+    <Compile Include="MmMemorizedreports.cs" />
+    <Compile Include="MmMultiage.cs" />
+    <Compile Include="MmMultiagescnd.cs" />
+    <Compile Include="MmOfficials.cs" />
+    <Compile Include="MmOmeoptions.cs" />
+    <Compile Include="MmRecords.cs" />
+    <Compile Include="MmRecordsapp.cs" />
+    <Compile Include="MmRecordsbyevent.cs" />
+    <Compile Include="MmRecordtags.cs" />
+    <Compile Include="MmRegions.cs" />
+    <Compile Include="MmRelay.cs" />
+    <Compile Include="MmRelaynames.cs" />
+    <Compile Include="MmScorelanes.cs" />
+    <Compile Include="MmScoring.cs" />
+    <Compile Include="MmScoringimprovement.cs" />
+    <Compile Include="MmSession.cs" />
+    <Compile Include="MmSessitem.cs" />
+    <Compile Include="MmSplit.cs" />
+    <Compile Include="MmStdlanes.cs" />
+    <Compile Include="MmTagnames.cs" />
+    <Compile Include="MmTeam.cs" />
+    <Compile Include="MmTeamcoaches.cs" />
+    <Compile Include="MmTimestd.cs" />
+    <Compile Include="MmWaveoffset.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tm2016fssl.cs" />
+    <Compile Include="Tm2023_all.cs" />
+    <Compile Include="TmAthinfo.cs" />
+    <Compile Include="TmAthlete.cs" />
+    <Compile Include="TmAthrecr.cs" />
+    <Compile Include="TmAttendance.cs" />
+    <Compile Include="TmCoaches.cs" />
+    <Compile Include="TmCode.cs" />
+    <Compile Include="TmCustomagegroup.cs" />
+    <Compile Include="TmCustomlayout.cs" />
+    <Compile Include="TmCustomlayoutfields.cs" />
+    <Compile Include="TmCustomlayoutvalues.cs" />
+    <Compile Include="TmCustomrpts.cs" />
+    <Compile Include="TmDeleteentry.cs" />
+    <Compile Include="TmEnergy.cs" />
+    <Compile Include="TmEntry.cs" />
+    <Compile Include="TmEsplits.cs" />
+    <Compile Include="TmFavorites.cs" />
+    <Compile Include="TmHytekagegroup.cs" />
+    <Compile Include="TmJournal.cs" />
+    <Compile Include="TmMeet.cs" />
+    <Compile Include="TmMemcirname.cs" />
+    <Compile Include="TmMemcirsets.cs" />
+    <Compile Include="TmMemsets.cs" />
+    <Compile Include="TmModel.cs" />
+    <Compile Include="TmModelparam.cs" />
+    <Compile Include="TmModt30times.cs" />
+    <Compile Include="TmMsdecline.cs" />
+    <Compile Include="TmMtevent.cs" />
+    <Compile Include="TmMtevente.cs" />
+    <Compile Include="TmOmeinvite.cs" />
+    <Compile Include="TmOmeoptions.cs" />
+    <Compile Include="TmOptions.cs" />
+    <Compile Include="TmPreenter.cs" />
+    <Compile Include="TmRecname.cs" />
+    <Compile Include="TmRecords.cs" />
+    <Compile Include="TmRelay.cs" />
+    <Compile Include="TmResult.cs" />
+    <Compile Include="TmSessions.cs" />
+    <Compile Include="TmSetdescriptions.cs" />
+    <Compile Include="TmSplits.cs" />
+    <Compile Include="TmStdname.cs" />
+    <Compile Include="TmStrokecategory.cs" />
+    <Compile Include="TmTeam.cs" />
+    <Compile Include="TmTestdata.cs" />
+    <Compile Include="TmTestline.cs" />
+    <Compile Include="TmTestset.cs" />
+    <Compile Include="TmTestt30.cs" />
+    <Compile Include="TmWkparam.cs" />
+    <Compile Include="TmWorkcategory.cs" />
+    <Compile Include="TmWorkout.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
